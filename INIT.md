@@ -4,15 +4,17 @@
   ```
   git clone https://github.com/marianzburlea/pug-starter quick-blog
   ```
-3. Remove the **src** folder, to make a clean start
+3. Change into your **quick-blog** project and remove the **src** folder, to make a clean start
 
   On linux/mac
   ```
+  cd quick-blog
   rm -rf src
   ```
 
   On Windows
   ```
+  cd quick-blog
   rd /s /q src
   ```
 
