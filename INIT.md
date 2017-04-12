@@ -1,6 +1,6 @@
 # Initial steps
 1. Create an empty project on GitHub named *quick-blog*
-2. In your projects path make a clone of *pug-starter*
+2. Open your terminal or command line and in your projects path make a clone of *pug-starter*
   ```
   git clone https://github.com/marianzburlea/pug-starter quick-blog
   ```
