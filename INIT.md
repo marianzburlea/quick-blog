@@ -32,10 +32,12 @@
 
 6. Link the current local project to your personal *quick-blog* repository that you've just created on GitHub
 
-```
-git init
-git add .
-git commit -m "Initialize quick-blog git repository"
-git remote add origin https://github.com/marianzburlea/quick-blog.git
-git push -u origin master
-```
+  ```
+  git init
+  git add .
+  git commit -m "Initialize quick-blog git repository"
+  git remote add origin https://github.com/marianzburlea/quick-blog.git
+  git push -u origin master
+  ```
+7. run `npm i` to load dependencies into *node_modules* folder
+8. run `npm run dev` to see your clean project in the browser with your welcome message
