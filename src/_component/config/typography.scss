@@ -1,0 +1,77 @@
+// http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/
+// https://zellwk.com/blog/viewport-based-typography/
+@import 'util';
+
+html {
+  font-size: 100%;
+
+  // Scales by 1px for every 100px from 768px to 1280px
+  @media (min-width: 768px) {
+    font-size: calc(112.5% + 4 * (100vw - 768px) / 512)
+  }
+
+  // Scales by 0.5px for every 100px from 1280px to 2000px
+  @media (min-width: 1280px) {
+    font-size: calc(137.5% + 5 * (100vw - 1280px) / 1280)
+  }
+}
+
+h2 {
+  @extend %h123;
+
+  // 53px
+  font-size: 3.3125rem;
+}
+
+h3 {
+  @extend %h123;
+
+  // 40px
+  font-size: 2.5rem;
+}
+
+h4 {
+  @extend %h456;
+
+  // 29px
+  font-size: 1.8125rem;
+}
+
+h5 {
+  @extend %h456;
+
+  // 28px
+  font-size: 3.3125rem;
+}
+
+h6 {
+  @extend %h456;
+
+  // 24px
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.72222;
+  margin: 0 0 0.9375rem;
+}
+
+small {
+  font-size: 0.8125rem;
+}
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+  border-bottom: 0.1rem solid $color-dark;
+
+  &:hover {
+    color: $color-normal;
+    border-bottom: 0.1rem solid $color-normal;
+  }
+}
+
+ol {
+  margin: 2rem;
+}
