@@ -27,3 +27,5 @@
 // bigger. Those 3Kb will be loaded at each page request, as it's inline with
 // the HTML code, and those 9Kb or more will be cached upon first visit and will
 // be quickly loaded starting with second page load and forward.
+
+@import '_component/config/colour';

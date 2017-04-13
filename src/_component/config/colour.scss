@@ -1,0 +1,63 @@
+// $theme:
+//        'curious-blue'
+//        'cinnabar'
+//        'mountain-meadow'
+//        'shamrock'
+//        'wisteria'
+//        'pickled-bluewood'
+//        'buttercup'
+//        'zest'
+//        'cascade'
+$theme: 'buttercup';
+// Default theme
+$color-normal: #000;
+$color-dark: #000;
+
+@if ($theme == 'cascade') {
+  $color-normal: #95A5A6;
+  $color-dark: #7F8C8D;
+}
+
+@if ($theme == 'zest') {
+  $color-normal: #E67E22;
+  $color-dark: #D35400;
+}
+
+@if ($theme == 'buttercup') {
+  $color-normal: #F1C40F;
+  $color-dark: #F39C12;
+}
+
+@if ($theme == 'pickled-bluewood') {
+  $color-normal: #34495E;
+  $color-dark: #2C3E50;
+}
+
+@if ($theme == 'wisteria') {
+  $color-normal: #9B59B6;
+  $color-dark: #8E44AD;
+}
+
+@if ($theme == 'shamrock') {
+  $color-normal: #2ECC71;
+  $color-dark: #27AE60;
+}
+
+@if ($theme == 'mountain-meadow') {
+  $color-normal: #1ABC9C;
+  $color-dark: #16A085;
+}
+
+@if ($theme == 'curious-blue') {
+  $color-normal: #3498db;
+  $color-dark: #2980b9;
+}
+
+@if ($theme == 'cinnabar') {
+  $color-normal: #e74c3c;
+  $color-dark: #c0392b;
+}
+
+$color-athens-gray: #e7e9ec;
+$color-white: #fff;
+$color-black: #000;
