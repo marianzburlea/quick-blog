@@ -1,0 +1,37 @@
+// we'll use this for h1, h2 and h3 tags
+// this lets other css classes extend it
+// and it's not present in the css unless
+// at least one class extends it
+%h123 {
+  color: $color-dark;
+  margin-top: 1.875rem;
+  margin-bottom: 0.9375rem;
+}
+
+// we'll use this for h4, h5 and h6 tags
+%h456 {
+  color: $color-dark;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+// This is a CSS trick to create an arrow down
+%arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid $color-white;
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+}
+
+// This is a CSS trick to create an arrow up
+%arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0.3rem solid $color-dark;
+  margin-left: 0.2rem;
+}
