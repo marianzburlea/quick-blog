@@ -1,0 +1,59 @@
+// reset the margin and padding of every element
+// and set the border sizing to border-box
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// in order for something to be able to have height 100%
+// its parent and all other containers must have a height set
+// so we start with html and body
+html, body {
+  height: 100%;
+}
+
+// style header 1 tag
+h1 {
+  // extend from the util %h123 class
+  @extend %h123;
+
+  // 61px
+  // set the text font size
+  font-size: 3.8125rem;
+  // and the text color to white
+  color: $color-white;
+  // and allow some margin so it doesn't stick to the edges
+  margin: 1rem;
+  // and align it to center
+  text-align: center;
+}
+
+// configure lead paragraph
+p.lead {
+  // set the text font size
+  font-size: 1.875rem;
+  // and allow some margin
+  margin: 1rem;
+  // and align the text to center
+  text-align: center;
+}
+
+// this is an important class to help us achieve
+// 100/100 google page speed insights score
+.welcome {
+  // we set its widht to 100%
+  width: 100%;
+  // and height (very important) to 100%, so it fills
+  // the entire available screen
+  height: 100%;
+  // use display flex to position them horizontally
+  // and vertically to center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // and let its children be positioned one under the other
+  flex-direction: column;
+  // and generate a nice radial gradient as background
+  background-image: radial-gradient(ellipse, $color-normal, $color-dark);
+}
