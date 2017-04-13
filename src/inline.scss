@@ -1,0 +1,29 @@
+// We use the inline CSS file to inject CSS into the header of each HTML
+// This CSS must be as small as possible and we'll only load in the CSS needed
+// for the initial content to be rendered in the browser. For this purpose we
+// are using a wrapper that spans full width and height, so all the other content
+// that follows will be pushed down. In our scenario, we'll have the title and
+// description present, with a background for the wrapper, the continue button
+// |---------------------------------------------------------------------------|
+// |                                                                           |
+// |              Initial content that spans full with and height              |
+// |                    and receives styles from inline.css                    |
+// |                    this content is visible on page load                   |
+// |                        without having to scroll down                      |
+// |                                                                           |
+// |---------------------------------------------------------------------------|
+// |                                                                           |
+// |  The rest of the conent, not visible on initial load as it's pushed down  |
+// |                    and receives styles from style.css                     |
+// |                  this content is not visible on page load                 |
+// |                       it can be viewed on scroll down                     |
+// |                                                                           |
+// |---------------------------------------------------------------------------|
+// and the menu. The menu will only be present for the "main" layout. The rest
+// of the CSS will be found in style.css and will be loaded at the end of the
+// HTML for faster rendering, so it doesn't block other content from being loaded.
+// At the moment, the inline.css is about 3Kb and the style.css is about 9Kb.
+// As the app/website grows in complexity only the size of style.css should grow
+// bigger. Those 3Kb will be loaded at each page request, as it's inline with
+// the HTML code, and those 9Kb or more will be cached upon first visit and will
+// be quickly loaded starting with second page load and forward.
