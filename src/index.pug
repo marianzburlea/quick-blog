@@ -1,1 +1,41 @@
-h1 Welcome to Quick Blog
+//- we extend the content of this file with the content of the main layout. It's
+    like the outcome of this extension is a sandwitch, this file is the meat in
+    the middle and the main layout are the two pieces of bread that wrapp the
+    middle of the sandwitch.
+extends _layout/main
+
+//- Using block "config" we configure and pass variables that are used in the
+    title tag, meta description and canonical link of the HTML
+block config
+  //- Configure the canonical url of this page. It is only useful for search
+      engines, SEO purposes. If you have the same content present on different
+      ulrs, it's good to tell search engines which one is the original so you
+      don't get penalised.
+  - const canonical = 'http://quick-blog.bitbee.uk'
+  //- Configure the title of the page, useful for SEO
+  - const title = 'Welcome to Quick Blog'
+  //- Configure the description of the page, useful for SEO
+      this will populate the meta description tag
+  - const description = 'Using super Quick Blog is easy and you can get 100/100 score on Google pagespeed insights'
+
+//- We use this welcome block which will span the entire screen width and height
+    and push the rest of the content down. This will be styled by inline.css,
+    which is already loaded within the HTML. The content will be rendered
+    instantly and available for the user to see.
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+
+//- The content of each page that is different from other pages will be present
+    blow, in the block "content"
+block content
+  h2 Firstly, let's write some content
+
+  //- Create a paragraph with a lead class
+  p.lead Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+  //- create a paragraph
+  p
+    //- and inside it a small tag
+    small Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
