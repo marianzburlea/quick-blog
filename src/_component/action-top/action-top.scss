@@ -1,0 +1,14 @@
+$class: 'action-top';
+
+.#{$class} {
+  text-align: right;
+}
+
+.#{$class}-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.#{$class}-arrow {
+  @extend %arrow-up;
+}
