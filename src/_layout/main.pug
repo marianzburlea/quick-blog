@@ -17,8 +17,12 @@ html
     if config.entry.css.inline
       link(rel="stylesheet", href=inlinePath, inline)
   body
+    //- this will generate an empty div with id="top"
+        used to navigate to it from the top link
     #top
     block welcome
+    //- this will generate an empty div with id="continue"
+      used to navigate to it from the continue button
     #continue
     block content
 //- add external css at the end of the HTML so it doesn't block any resource download
