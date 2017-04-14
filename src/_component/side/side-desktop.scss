@@ -8,6 +8,10 @@
     flex-grow: 0;
   }
 
+  .#{$class}-link {
+    white-space: nowrap;
+  }
+
   .#{$class}-title,
   .#{$class}-menu {
     text-align: left;
