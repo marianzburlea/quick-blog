@@ -1,0 +1,24 @@
+$class: 'continue';
+
+.#{$class}-arrow {
+  @extend %arrow-down;
+}
+
+.#{$class},
+.#{$class}:hover {
+  text-decoration: none;
+  font-size: 1rem;
+  color: $color-white;
+  background-color: $color-dark;
+  border: 0.2rem solid $color-white;
+  border-radius: $border-radius;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.#{$class}:hover {
+  border-color: $color-normal;
+}
