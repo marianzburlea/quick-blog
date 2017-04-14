@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .#{$class} {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .#{$class}-panel {
+    flex-grow: 1;
+  }
+
+  .#{$class}-title,
+  .#{$class}-menu {
+    text-align: left;
+  }
+}

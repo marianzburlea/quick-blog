@@ -1,0 +1,41 @@
+.#{$class}-panel {
+  border-radius: $border-radius;
+  background-color: $color-dark;
+  color: $color-white;
+  margin: 0.5rem;
+}
+
+.#{$class}-title {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-normal;
+  text-align: center;
+}
+
+.#{$class}-menu {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.#{$class}-item {
+  display: block;
+  width: 100%;
+}
+
+.#{$class}-link {
+  padding: 0.5rem 0;
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+  display: block;
+  border: none;
+
+  &:hover {
+    color: $color-black;
+    border: none;
+  }
+}
