@@ -1,0 +1,9 @@
+.side
+  each panel in data.site.side
+    .side-panel
+      .side-title=panel.title
+      .side-body
+        ul.side-menu
+          each item in panel.item
+            li.side-item
+              a.side-link(href=item.link)=item.label
