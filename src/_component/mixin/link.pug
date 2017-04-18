@@ -1,0 +1,11 @@
+//- Usage:
+  multiline:
+  +link({
+    href: 'http://bitbee.uk',
+    text: 'Click me',
+    title: 'Click this link to go places'
+  })
+  one line:
+  +link({ href: 'http://bitbee.uk', text: 'Click me', title: 'Click this link to go places' })
+mixin link({href, text, title})
+  a(class!=attributes.class href=href title=title)= text

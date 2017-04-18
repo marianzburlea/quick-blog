@@ -1,0 +1,11 @@
+$class: 'image';
+
+.#{$class} {
+  border-radius: $border-radius;
+  border: 0.3rem solid $color-normal;
+  max-width: 100%;
+}
+
+.#{$class}-caption {
+  font-style: italic;
+}

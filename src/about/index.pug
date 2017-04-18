@@ -1,0 +1,31 @@
+//- Since this file, "index.pug" is located in src/about, to get the correct
+    path to the "main" layout, we'll use .. to go up one folder, into src,
+    followed by "_layout", the name of the folder and "main", the name of the
+    file.
+    Note: we do not need to use the file extension ".pug" as it is optional to
+    add it. Feel free to use it if you consider it makes more sense to you.
+extends ../_layout/main
+
+block config
+  - const canonical = 'http://quick-blog.bitbee.uk/about'
+  - const title = 'About Quick Blog'
+  - const description = 'Quick Blog is one of the quickest and fastest toold for writing blogs in the world'
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  h2 Features
+  ul
+    li You can achieve 100/100 Google Page speed insight score.
+    li Load and render on the client is blazing fast, most of the time it happens quicker than you can blink, for real!
+    li #[+image({filename: 'blazing-fast-load.png', autopath: true})]
+    li Quick Blog allows you to build HTML pages quickly and painless.
+    li It makes use of PUG (former JADE) template language to generate HTML and SASS (SCSS) to power up CSS.
+    li It is open source and it derives from #[+link({href: 'https://github.com/marianzburlea/pug-starter', text: 'Pug Starter'})], enabling faster delivery of HTML &amp; CSS projects to a private server and/or automatic deployment of GitHub pages.
+    li JSON to HTML template. You can build a template that applies to multiple JSON files and generates HTML for each of them.
+  h2 Age
+  p Quick Blog was born in March 2017 out of the need to quickly prototype projects.
