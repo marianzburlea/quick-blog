@@ -1,0 +1,41 @@
+// the mobile is valid for tablet too
+.#{$class} {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: $color-dark;
+  border-radius: $border-radius;
+  border: 0.2rem solid $color-white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: $color-white;
+  font-size: 1.125rem;
+
+  &:hover {
+    border-color: $color-normal;
+  }
+}
+
+.#{$class}-arrow {
+  @extend %arrow-down;
+
+  border-width: 0.3rem;
+}
+
+.#{$class}-home-wrapper {
+  text-align: right;
+}
+
+.#{$class}-home {
+  margin: 1rem;
+  display: inline-block;
+}
+
+.#{$class}-link:hover,
+.#{$class}-link {
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}

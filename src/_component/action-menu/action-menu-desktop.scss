@@ -1,0 +1,7 @@
+// hide the go to menu on desktop as the menu is present
+// on the right side of the page, under the .welcome div
+@media (min-width: 1280px) {
+  .#{$class} {
+    display: none;
+  }
+}
