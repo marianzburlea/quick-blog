@@ -25,3 +25,29 @@ body {
   flex-grow: 1;
   padding: 0 2.5rem 2.5rem;
 }
+
+pre {
+  border: 0.2rem solid $color-normal;
+  padding: 0.5rem;
+  background-color: $color-athens-gray;
+  border-radius: $border-radius;
+}
+
+hr {
+  border: none;
+  border-bottom: 0.1rem solid $color-athens-gray;
+  margin: 1rem;
+}
+
+table {
+  border: 0.1rem solid $color-athens-gray;
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem;
+  }
+
+  tr:nth-child(even) {
+    background-color: $color-athens-gray;
+  }
+}

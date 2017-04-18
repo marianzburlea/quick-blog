@@ -1,0 +1,40 @@
+{
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
+  "head": {
+    "title": "HTML5 Tutorial",
+    "description": "With HTML you can create your own Web site. This tutorial teaches you everything about HTML."
+  },
+  "body": [
+    {
+      "type": "blockquote",
+      "source": "Marian Zburlea",
+      "link": "http://bitbee.uk",
+      "data": [
+        "With HTML you can create your own Web site.",
+        "This tutorial teaches you everything about HTML.",
+        "HTML is easy to learn - You will enjoy it."
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "Examples in Every Chapter"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "This HTML tutorial contains hundreds of HTML examples.",
+        "With our online HTML editor, you can edit the HTML, and click on a button to view the result."
+      ]
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>"
+      ]
+    }
+  ]
+}
