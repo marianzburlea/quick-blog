@@ -1,0 +1,27 @@
+[
+  {
+    "title": "HTML5 Tutorial",
+    "link": "/article/html5-tutorial",
+    "description": "With HTML you can create your own Web site. This tutorial teaches you everything about HTML."
+  }
+  ,{
+    "title": "HTML Introduction",
+    "link": "/article/html-introduction",
+    "description": "HTML is the standard markup language for creating Web pages."
+  }
+  ,{
+    "title": "HTML Editors",
+    "link": "/article/html-editors",
+    "description": "Web pages can be created and modified by using professional HTML editors."
+  }
+  ,{
+    "title": "HTML Basic Examples",
+    "link": "/article/html-basic",
+    "description": "You will learn about them in the next chapters."
+  }
+  ,{
+    "title": "HTML Elements",
+    "link": "/article/html-elements",
+    "description": "An HTML element usually consists of a start tag and end tag, with the content inserted in between"
+  }
+]
