@@ -1,1 +1,24 @@
-h1 css list of articles
+//- Since this file, "index.pug" is located in src/css, to get the correct
+    path to the "main" layout, we'll use .. to go up one folder, into src,
+    followed by "_layout", the name of the folder and "main", the name of the
+    file.
+    Note: we do not need to use the file extension ".pug" as it is optional to
+    add it. Feel free to use it if you consider it makes more sense to you.
+extends ../_layout/main
+
+block config
+  - const canonical = 'http://quick-blog.bitbee.uk/css'
+  - const title = 'CSS3 introduction'
+  - const description = 'Explore CSS3 in a new light'
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  h2 Discover the power of awesome CSS3
+  .list-wrapper
+    each article in data.css
+      include ../_component/article/article
