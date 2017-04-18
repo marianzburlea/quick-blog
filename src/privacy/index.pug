@@ -1,0 +1,53 @@
+//- Since this file, "index.pug" is located in src/privacy, to get the correct
+    path to the "simple" layout, we'll use .. to go up one folder, into src,
+    followed by "_layout", the name of the folder and "simple", the name of the
+    file.
+    Note: we do not need to use the file extension ".pug" as it is optional to
+    add it. Feel free to use it if you consider it makes more sense to you.
+extends ../_layout/simple
+
+block config
+  - const canonical = 'http://quick-blog.bitbee.uk/privacy'
+  - const title = 'Privacy Policy'
+  - const description = 'Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following information outlines our privacy policy.'
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  ol
+    li Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
+    li We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.
+    li We will only retain personal information as long as necessary for the fulfillment of those purposes.
+    li We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
+    li Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
+    li We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+    li We will make readily available to customers information about our policies and practices relating to the management of personal information.
+    li We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.
+  //- include action top component
+  include ../_component/action-top/action-top
+  h2 How do we protect your information?
+  p We implement a variety of security measures to maintain the safety of your personal information when you place an order #{data.site.company} offers the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted into our Payment gateway providers database only to be accessible by those authorized with special access rights to such systems, and are required to keep the information confidential. After a transaction, your private information (credit cards, social security numbers, financials, etc.) will not be stored on our servers.
+  include ../_component/action-top/action-top
+  h2 Do we use cookies?
+  s Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the sites or service providers systems to recognize your browser and capture and remember certain information. We use cookies to help us remember and process the items in your shopping cart.
+  p NO, it's 2017, who's still using cookies? We use JWT (JSON Web Token). JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
+  include ../_component/action-top/action-top
+  h2 Do we disclose any information to outside parties?
+  p #{data.site.company} does not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+  include ../_component/action-top/action-top
+  h2 Children’s Online Privacy Protection Act Compliance
+  p We are in compliance with the requirements of COPPA (Children’s Online Privacy Protection Act); we do not collect any information from anyone under 13 years of age. Our website, products and services are all directed to people who are at least 13 years old or older.
+  include ../_component/action-top/action-top
+  h2 English Language
+  p The English version of this Privacy Policy governs. All disputes, claims and causes of action (and related proceedings) will be communicated in English.
+  include ../_component/action-top/action-top
+  h2 Your Consent
+  p By using our site, you consent to our privacy policy.
+  include ../_component/action-top/action-top
+  h2 Changes to our Privacy Policy
+  p If we make a material change to our privacy policies and procedures as to the collection, use or disclosure of your Personal Information, we will post a notice of those changes on our Website or notify you by email (sent to the email address specified in your account) to keep you aware of what information we collect, how we use it and under what circumstances we may disclose it, prior to the change becoming effective. You are bound by changes to the Privacy Policy when you use the site after those changes have been posted. We encourage you to periodically review this page for the latest information on our privacy practices.
+  include ../_component/action-top/action-top
