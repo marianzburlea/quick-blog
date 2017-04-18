@@ -1,0 +1,17 @@
+//- Image
+  Usage: +image({filename: 'november.jpg', caption: 'Leaves fall down in November', autopath: true})
+  CSS: .image-container, .image, .image-caption
+  filename - [string] full file name of image
+  caption  - [string] text for image caption
+  autopath - [boolean]  if true prefix the filename with /asset/image/
+                        if false leave the filename as is
+mixin image({filename, caption, autopath})
+  - var path = autopath ? "/asset/image/" : ""
+
+  figure.image-container&attributes(attributes)
+    img.image(src=path + filename)
+
+    if caption
+      figcaption.image-caption
+        strong Note:
+        span= ` ${caption}`
