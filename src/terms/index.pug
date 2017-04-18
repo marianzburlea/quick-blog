@@ -1,0 +1,64 @@
+//- Since this file, "index.pug" is located in src/terms, to get the correct
+    path to the "simple" layout, we'll use .. to go up one folder, into src,
+    followed by "_layout", the name of the folder and "simple", the name of the
+    file.
+    Note: we do not need to use the file extension ".pug" as it is optional to
+    add it. Feel free to use it if you consider it makes more sense to you.
+extends ../_layout/simple
+
+block config
+  - const canonical = 'http://quick-blog.bitbee.uk/terms'
+  - const title = 'Terms and Conditions'
+  - const description = `${data.site.company} Terms and Conditions of Use`
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+
+  h2 1. Terms
+
+  p By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.
+  //- include action top component
+  include ../_component/action-top/action-top
+  h2 2. Disclaimer
+
+  p The materials on #{data.site.company}’s web site are provided "as shown". #{data.site.company} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, #{data.site.company} does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its internet web site or otherwise relating to such materials or on any sites linked to this site.
+
+  include ../_component/action-top/action-top
+  h2 3. Limitations
+
+  p In no event shall #{data.site.company} or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on our internet site, even if we or an authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+
+  include ../_component/action-top/action-top
+  h2 4. Revisions and Errors
+
+  p The materials appearing on our web site could include technical, typographical, or photographic errors. #{data.site.company} does not warrant that any of the materials on its web site are accurate, complete, or current. We may make changes to the materials contained on its web site at any time without notice.
+
+  include ../_component/action-top/action-top
+  h2 5. Links
+
+  p #{data.site.company} has not reviewed all of the sites linked to its internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by us of the site. Use of any such linked web site is at the user's own risk.
+
+  include ../_component/action-top/action-top
+  h2 6. Site Terms of Use Modifications
+
+  p We may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+
+  include ../_component/action-top/action-top
+  h2 7. Governing Law
+
+  p Any claim relating to #{data.site.company}’s web site shall be governed by the laws of the country of note without regard to its conflict of law provisions.
+
+  include ../_component/action-top/action-top
+  h2 8. English Language
+
+  p In the event of a conflict between these Terms and a foreign language version of our Terms of Use, the English language version of these Terms governs. All disputes, claims and causes of action (and related proceedings) will be communicated in English.
+
+  include ../_component/action-top/action-top
+  h2 9. Copyright policy, notice, and claim information
+
+  p All materials on this site, whether separate or compiled, including, but not limited to, text, graphics, audio clips, logos, buttons, images, digital downloads, data compilations, software, icons, html code and xml code, as well as all copyright, patent, trademark, trade dress, and other rights therein, are owned or licensed by #{data.site.company} and its third-party information providers, and are protected by U.K. and international intellectual property laws.

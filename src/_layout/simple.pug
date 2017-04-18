@@ -1,0 +1,29 @@
+doctype html
+html
+  block config
+  head
+    //- Check if title exists
+    if title
+      title #{title}
+    //- Check if description exists
+    if description
+      meta(name="description", content=description)
+    //- Check if canonical exists
+    if canonical
+      link(rel="canonical", href=canonical)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    if config.entry.css.inline
+      link(rel="stylesheet", href=inlinePath, inline)
+  body
+    #top
+    include ../_component/mixin/mixin
+    block welcome
+    #continue
+    .page-wrapper
+      .container
+        .content
+          block content
+      include ../_component/footer/footer
+      include ../_component/action-menu/action-menu-home
+if config.entry.css.external
+  link(href="/style.css", rel="stylesheet")
