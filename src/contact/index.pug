@@ -1,0 +1,42 @@
+//- Since this file, "index.pug" is located in src/contact, to get the correct
+    path to the "main" layout, we'll use .. to go up one folder, into src,
+    followed by "_layout", the name of the folder and "main", the name of the
+    file.
+    Note: we do not need to use the file extension ".pug" as it is optional to
+    add it. Feel free to use it if you consider it makes more sense to you.
+extends ../_layout/main
+
+block config
+  - const canonical = 'http://quick-blog.bitbee.uk/contact'
+  - const title = 'Contact Quick Blog'
+  - const description = 'Contact me, the creator, Marian Zburlea'
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+block content
+  h2 Contact Information
+  p You can find me on those social media platforms:
+  ul
+    li #[+link({link: 'https://www.facebook.com/marianzburlea', text: 'Facebook', title: 'Click to go to Facebook'})]
+    li #[+link({link: 'https://twitter.com/marianzburlea', text: 'Twitter', title: 'Click to go to Twitter'})]
+    li 
+      +link({
+        link: 'https://www.linkedin.com/in/marianzburlea/', 
+        text: 'LinkedIn', 
+        title: 'Click to go to LinkedIn'
+      })
+    li 
+      +link({
+        link: 'https://www.youtube.com/channel/UCr9aPqQ9u4RFLG46FcYP4iw', 
+        text: 'YouTube', 
+        title: 'Click to go to YouTube'
+      })
+    li 
+      +link({
+        link: 'http://stackoverflow.com/users/2013164/marian-zburlea', 
+        text: 'StackOverflow', 
+        title: 'Click to go to StackOverflow'
+      })
