@@ -1,0 +1,13 @@
+$class: 'article';
+
+.#{$class} {
+  padding: 1rem;
+
+  &:nth-child(odd) {
+    background-color: $color-athens-gray;
+  }
+}
+
+.#{$class}-link {
+  text-align: right;
+}
