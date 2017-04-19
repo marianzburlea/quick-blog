@@ -49,7 +49,7 @@ p.lead {
   width: 100%;
   // and height (very important) to 100%, so it fills
   // the entire available screen
-  height: 100%;
+  min-height: 100%;
   // use display flex to position them horizontally
   // and vertically to center
   display: flex;
