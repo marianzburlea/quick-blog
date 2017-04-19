@@ -1,0 +1,14 @@
+$class: 'blockquote';
+
+#{$class} {
+  border-left: 0.1875rem solid #e7e9ec;
+  padding: 0 0 0 1rem;
+  margin: 0 0 1.875rem;
+}
+
+#{$class}-body {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
