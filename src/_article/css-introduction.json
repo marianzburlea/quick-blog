@@ -1,0 +1,62 @@
+{
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
+  "head": {
+    "title": "CSS Introduction",
+    "description": "CSS stands for Cascading Style Sheets"
+  },
+  "body": [
+    {
+      "type": "h2",
+      "data": "What is CSS?"
+    }
+    ,{
+      "type": "ul",
+      "data": [
+        "CSS stands for Cascading Style Sheets",
+        "CSS describes how HTML elements are to be displayed on screen, paper, or in other media",
+        "CSS saves a lot of work. It can control the layout of multiple web pages all at once",
+        "External stylesheets are stored in CSS files"
+      ]
+    }
+    ,{
+      "type": "h3",
+      "data": "Why Use CSS?"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. "
+      ]
+    }
+    ,{
+      "type": "h3",
+      "data": "CSS Solved a Big Problem"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "HTML was NEVER intended to contain tags for formatting a web page!",
+        "HTML was created to describe the content of a web page, like:",
+        "&lt;h1&gt;This is a heading&lt;/h1&gt;",
+        "&lt;p&gt;This is a paragraph.&lt;/p&gt;",
+        "When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.",
+        "To solve this problem, the World Wide Web Consortium (W3C) created CSS.",
+        "CSS removed the style formatting from the HTML page!"
+      ]
+    }
+    ,{
+      "type": "h3",
+      "data": "CSS Saves a Lot of Work!"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "The style definitions are normally saved in external .css files.",
+        "With an external stylesheet file, you can change the look of an entire website by changing just one file!"
+      ]
+    }
+  ]
+}
