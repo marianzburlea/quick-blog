@@ -1,0 +1,44 @@
+{
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
+  "head": {
+    "title": "HTML Basic",
+    "description": "HTML is the standard markup language for creating Web pages."
+  },
+  "body": [
+    {
+      "type": "h2",
+      "data": "What is HTML?"
+    }
+    ,{
+      "type": "p",
+      "data": [
+        "HTML is the standard markup language for creating Web pages."
+      ]
+    }
+    ,{
+      "type": "ul",
+      "data": [
+        "HTML stands for Hyper Text Markup Language",
+        "HTML describes the structure of Web pages using markup",
+        "HTML elements are the building blocks of HTML pages",
+        "HTML elements are represented by tags",
+        "HTML tags label pieces of content such as \"heading\", \"paragraph\", \"table\", and so on",
+        "Browsers do not display the HTML tags, but use them to render the content of the page"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "A Simple HTML Document"
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>\n</html>"
+      ]
+    }
+  ]
+}
