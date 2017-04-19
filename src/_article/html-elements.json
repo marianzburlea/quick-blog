@@ -1,0 +1,106 @@
+{
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
+  "head": {
+    "title": "HTML Elements",
+    "description": "An HTML element usually consists of a start tag and end tag, with the content inserted in between"
+  },
+  "body": [
+    {
+      "type": "paragraph-safe",
+      "data": [
+        "&lt;tagname&gt;Content goes here...&lt;/tagname&gt;",
+        "The HTML <b>element</b> is everything from the start tag to the end tag:",
+        "&lt;p&gt;My first paragraph.&lt;/p&gt;",
+        "<table> <tr> <th>Start tag</th> <th>Element content</th> <th>End tag</th> </tr> <tr> <td>&lt;h1&gt;</td> <td>My First Heading</td> <td>&lt;/h1&gt;</td> </tr> <tr> <td>&lt;p&gt;</td> <td>My first paragraph.</td> <td>&lt;/p&gt;</td> </tr> <tr> <td colspan=\"3\"><br></td> </tr> </table>"
+      ]
+    }
+    ,{
+      "type": "blockquote",
+      "data": [
+        "HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <br> element (which indicates a line break)."
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "Nested HTML Elements"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "HTML elements can be nested (elements can contain elements).",
+        "All HTML documents consist of nested HTML elements.",
+        "This example contains four HTML elements:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>\n</html>"
+      ]
+    }
+    ,{
+      "type": "h4",
+      "data": "Example Explained"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The <b>&lt;html&gt;</b> element defines the <b>whole document</b>.",
+        "It has a <b>start</b> tag &lt;html&gt; and an <b>end</b> tag &lt;/html&gt;.",
+        "The element <b>content</b> is another HTML element (the &lt;body&gt; element)."
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "<html>\n<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>\n</html>"
+      ]
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The <b>&lt;body&gt;</b> element defines the <b>document body</b>.",
+        "It has a <b>start</b> tag &lt;body&gt; and an <b>end</b> tag &lt;/body&gt;.",
+        "The element <b>content</b> is two other HTML elements (&lt;h1&gt; and &lt;p&gt;)."
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>"
+      ]
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The <b>&lt;h1&gt;</b> element defines a <b>heading</b>.",
+        "It has a <b>start</b> tag &lt;h1&gt; and an <b>end</b> tag &lt;/h1&gt;.",
+        "The element <b>content</b> is: My First Heading."
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "<h1>My First Heading</h1>"
+      ]
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The <b>&lt;p&gt;</b> element defines a <b>paragraph</b>.",
+        "It has a <b>start</b> tag &lt;p&gt; and an <b>end</b> tag &lt;/p&gt;.",
+        "The element <b>content</b> is: My first paragraph."
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "<p>My first paragraph.</p>"
+      ]
+    }
+  ]
+}
