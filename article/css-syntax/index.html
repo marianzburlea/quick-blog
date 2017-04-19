@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><title>CSS Syntax and Selectors</title><meta name="description" content="A CSS rule-set consists of a selector and a declaration block"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><style>h1,p.lead{margin:1rem;text-align:center}h1{color:#fff;font-size:3.8125rem}.action-menu-arrow,.continue-arrow{width:0;height:0;border-left:.5rem solid transparent;border-right:.5rem solid transparent;border-top:.5rem solid #fff;margin-top:.3rem;margin-left:.2rem}*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.continue,.continue:hover{text-decoration:none;font-size:1rem;color:#fff;background-color:#f39c12;border:.2rem solid #fff;border-radius:.375rem;margin-top:2rem;margin-bottom:5rem;padding:1rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.action-menu:hover,.continue:hover{border-color:#f1c40f}body,html{height:100%}p.lead{font-size:1.875rem}.welcome{width:100%;min-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-image:-webkit-radial-gradient(ellipse,#f1c40f,#f39c12);background-image:radial-gradient(ellipse,#f1c40f,#f39c12)}.action-menu{position:fixed;bottom:0;right:0;background-color:#f39c12;border-radius:.375rem;border:.2rem solid #fff;margin:.5rem;padding:.5rem;color:#fff;font-size:1.125rem}.action-menu-arrow{border-width:.3rem}.action-menu-home-wrapper{text-align:right}.action-menu-home{margin:1rem;display:inline-block}.action-menu-link,.action-menu-link:hover{color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border:none}@media (min-width:1280px){.action-menu{display:none}}</style></head><body><div id="top"></div><div class="welcome"><h1>CSS Syntax and Selectors</h1><p class="lead">A CSS rule-set consists of a selector and a declaration block</p><a class="continue" href="#continue"><span>click to continue reading or scroll down</span><span class="continue-arrow"></span></a></div><div id="continue"></div><div class="page-wrapper"><div class="container"><div class="content"><div id="continue"></div><h2>CSS Syntax</h2><p>A CSS rule-set consists of a selector and a declaration block:</p><figure class="image-container"><img class="image" src="selector.gif"></figure><p>The selector points to the HTML element you want to style.</p><p>The declaration block contains one or more declarations separated by semicolons.</p><p>Each declaration includes a CSS property name and a value, separated by a colon.</p><p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p><p>In the following example all &lt;p&gt; elements will be center-aligned, with a red text color:</p><h3 class="pre-title">Example</h3><pre>p {
+    color: red;
+    text-align: center;
+}</pre><h2>CSS Selectors</h2><p>CSS selectors are used to &quot;find&quot; (or select) HTML elements based on their element name, id, class, attribute, and more.</p><h2>The element Selector</h2><p>The element selector selects elements based on the element name.</p><p>You can select all &lt;p&gt; elements on a page like this (in this case, all &lt;p&gt; elements will be center-aligned, with a red text color):</p><h3 class="pre-title"></h3><pre>p {
+    text-align: center;
+    color: red;
+}</pre><h2>The id Selector</h2><p>The id selector uses the id attribute of an HTML element to select a specific element.</p><p>The id of an element should be unique within a page, so the id selector is used to select one unique element!</p><p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p><p>The style rule below will be applied to the HTML element with id="para1":</p><h3 class="pre-title"></h3><pre>#para1 {
+    text-align: center;
+    color: red;
+}</pre><blockquote class="blockquote"><div class="blockquote-body"><p>Note: An id name cannot start with a number!</p></div></blockquote><h2>The class Selector</h2><p>The class selector selects elements with a specific class attribute.</p><p>To select elements with a specific class, write a period (.) character, followed by the name of the class.</p><p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p><h3 class="pre-title"></h3><pre>.center {
+    text-align: center;
+    color: red;
+}</pre><p>You can also specify that only specific HTML elements should be affected by a class.</p><p>In the example below, only <p> elements with class="center" will be center-aligned:</p><h3 class="pre-title"></h3><pre>p.center {
+    text-align: center;
+    color: red;
+}</pre><p>HTML elements can also refer to more than one class.</p><p>In the example below, the <p> element will be styled according to class="center" and to class="large":</p><h3 class="pre-title"></h3><pre>&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;</pre><hr><blockquote class="blockquote"><div class="blockquote-body"><p>Note: A class name cannot start with a number!</p></div></blockquote><h2>Grouping Selectors</h2><p>If you have elements with the same style definitions, like this:</p><h3 class="pre-title"></h3><pre>h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    color: red;
+}</pre><p>It will be better to group the selectors, to minimize the code.</p><p>To group selectors, separate each selector with a comma.</p><p>In the example below we have grouped the selectors from the code above:</p><h3 class="pre-title">Example</h3><pre>h1, h2, p {
+    text-align: center;
+    color: red;
+}</pre><h2>CSS Comments</h2><p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p><p>Comments are ignored by browsers.</p><p>A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</p><h3 class="pre-title">Example</h3><pre>p {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+}
+
+/* This is
+a multi-line
+comment */</pre></div><div class="side"><div class="side-panel"><div class="side-title">Info</div><div class="side-body"><ul class="side-menu"><li class="side-item"><a class="side-link" href="/">Quick blog</a></li><li class="side-item"><a class="side-link" href="/about">About</a></li><li class="side-item"><a class="side-link" href="/contact">Contact</a></li></ul></div></div><div class="side-panel"><div class="side-title">Category</div><div class="side-body"><ul class="side-menu"><li class="side-item"><a class="side-link" href="/css">CSS</a></li><li class="side-item"><a class="side-link" href="/html">HTML</a></li></ul></div></div></div></div><div class="footer"><div>&copy; 2017 My Company</div><ul class="footer-menu"><li class="footer-item"><a class="footer-link" href="/privacy">Privacy</a></li><li class="footer-item"><a class="footer-link" href="/terms">Terms</a></li></ul></div><div id="menu"></div><div class="action-menu"><a class="action-menu-link" href="#menu"><span class="action-menu-label">Menu</span><span class="action-menu-arrow"></span></a></div></div></body></html><link href="/style.css" rel="stylesheet">
