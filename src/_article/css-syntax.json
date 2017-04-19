@@ -1,0 +1,199 @@
+{
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
+  "head": {
+    "title": "CSS Syntax and Selectors",
+    "description": "A CSS rule-set consists of a selector and a declaration block"
+  },
+  "body": [
+    {
+      "type": "h2",
+      "data": "CSS Syntax"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "A CSS rule-set consists of a selector and a declaration block:"
+      ]
+    }
+    ,{
+      "type": "img",
+      "src": "selector.gif",
+      "autopath": false
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "The selector points to the HTML element you want to style.",
+        "The declaration block contains one or more declarations separated by semicolons.",
+        "Each declaration includes a CSS property name and a value, separated by a colon.",
+        "A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.",
+        "In the following example all <p> elements will be center-aligned, with a red text color:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "p {\n    color: red;\n    text-align: center;\n}"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "CSS Selectors"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "CSS selectors are used to \"find\" (or select) HTML elements based on their element name, id, class, attribute, and more."
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "The element Selector"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The element selector selects elements based on the element name.",
+        "You can select all &lt;p&gt; elements on a page like this (in this case, all &lt;p&gt; elements will be center-aligned, with a red text color):"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "p {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "The id Selector"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The id selector uses the id attribute of an HTML element to select a specific element.",
+        "The id of an element should be unique within a page, so the id selector is used to select one unique element!",
+        "To select an element with a specific id, write a hash (#) character, followed by the id of the element.",
+        "The style rule below will be applied to the HTML element with id=\"para1\":"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "#para1 {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "blockquote",
+      "data": [
+        "Note: An id name cannot start with a number!"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "The class Selector"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "The class selector selects elements with a specific class attribute.",
+        "To select elements with a specific class, write a period (.) character, followed by the name of the class.",
+        "In the example below, all HTML elements with class=\"center\" will be red and center-aligned:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        ".center {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "You can also specify that only specific HTML elements should be affected by a class.",
+        "In the example below, only <p> elements with class=\"center\" will be center-aligned:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "p.center {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "HTML elements can also refer to more than one class.",
+        "In the example below, the <p> element will be styled according to class=\"center\" and to class=\"large\":"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "<p class=\"center large\">This paragraph refers to two classes.</p>"
+      ]
+    }
+    ,{
+      "type": "hr"
+    }
+    ,{
+      "type": "blockquote",
+      "data": [
+        "Note: A class name cannot start with a number!"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "Grouping Selectors"
+    }
+    ,{
+      "type": "paragraph-safe",
+      "data": [
+        "If you have elements with the same style definitions, like this:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "data": [
+        "h1 {\n    text-align: center;\n    color: red;\n}\n\nh2 {\n    text-align: center;\n    color: red;\n}\n\np {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "It will be better to group the selectors, to minimize the code.",
+        "To group selectors, separate each selector with a comma.",
+        "In the example below we have grouped the selectors from the code above:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "h1, h2, p {\n    text-align: center;\n    color: red;\n}"
+      ]
+    }
+    ,{
+      "type": "h2",
+      "data": "CSS Comments"
+    }
+    ,{
+      "type": "paragraph",
+      "data": [
+        "Comments are used to explain the code, and may help when you edit the source code at a later date.",
+        "Comments are ignored by browsers.",
+        "A CSS comment starts with /* and ends with */. Comments can also span multiple lines:"
+      ]
+    }
+    ,{
+      "type": "pre",
+      "title": "Example",
+      "data": [
+        "p {\n    color: red;\n    /* This is a single-line comment */\n    text-align: center;\n}\n\n/* This is\na multi-line\ncomment */"
+      ]
+    }
+  ]
+}
