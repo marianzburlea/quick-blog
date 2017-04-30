@@ -34,4 +34,5 @@ html
       include ../_component/action-menu/action-menu
 //- add external css at the end of the HTML so it doesn't block any resource download
 if config.entry.css.external
-  link(href="/style.css", rel="stylesheet")
+  //- link(href="/style.css", rel="stylesheet")
+  link(href="https://s3.eu-west-2.amazonaws.com/tesla.bitbee.uk/style.css", rel="stylesheet")
