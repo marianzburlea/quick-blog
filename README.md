@@ -1,4 +1,7 @@
 # Pug starter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/marianzburlea/quick-blog.svg)](https://greenkeeper.io/)
+
 Starter package for pug (former jade) template based projects.
 
 ***Note***: When you want to make use of the automatically loaded JSON data, *site.data* has been replaced by *data*. On top of that, in templates, JSON data can be accessed with *template* (example: *template.title* or *template.config.render*)
